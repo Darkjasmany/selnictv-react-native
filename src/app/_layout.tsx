@@ -1,18 +1,23 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from 'expo-router';
-import * as SplashScreen from 'expo-splash-screen';
-import { useColorScheme } from 'react-native';
+// TODO: Se crea una instancia de QueryClient para manejar el estado de las consultas y la caché de datos en la aplicación. Esto nos permite centralizar la configuración de las consultas y reutilizarla en diferentes partes de nuestra aplicación.
 
-import { AnimatedSplashOverlay } from '@/components/animated-icon';
-import AppTabs from '@/components/app-tabs';
+// TODO: Para que el deslizamiento (swipe) funcione sin quedarse atascado, el GestureHandlerRootView no debe ir en el componente del carrusel ni en el HomeScreen. Debe ir en tu archivo principal de navegación. Regla de Expo Router.
 
-SplashScreen.preventAutoHideAsync();
+// Se renderiza el componente Stack que nos permite manejar la navegación entre las diferentes pantallas de nuestra aplicación.
 
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { Stack } from "expo-router";
+import React from "react";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+import "../../global.css";
+
+const queryClient = new QueryClient();
+
+export default function RootLayout() {
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <AnimatedSplashOverlay />
-      <AppTabs />
-    </ThemeProvider>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <QueryClientProvider client={queryClient}>
+        <Stack screenOptions={{ headerShown: false }} />
+      </QueryClientProvider>
+    </GestureHandlerRootView>
   );
 }
