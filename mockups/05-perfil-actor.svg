@@ -1,0 +1,83 @@
+<svg width="375" height="812" viewBox="0 0 375 812" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="avatar" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4C1D95"/><stop offset="1" stop-color="#DB2777"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1E3A8A"/><stop offset="1" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7F1D1D"/><stop offset="1" stop-color="#F43F5E"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#134E4A"/><stop offset="1" stop-color="#2DD4BF"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#312E81"/><stop offset="1" stop-color="#6366F1"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="375" height="812" rx="48" fill="#0A0A0A"/>
+  <rect x="7" y="7" width="361" height="798" rx="36" fill="#09090B"/>
+  <rect x="145" y="15" width="85" height="24" rx="12" fill="#000000"/>
+
+  <g>
+    <text x="31" y="31" font-size="15" font-weight="600" fill="#FAFAFA" font-family="sans-serif">9:41</text>
+    <rect x="292" y="19" width="18" height="10" rx="2.5" fill="none" stroke="#FAFAFA" stroke-width="1.3"/>
+    <rect x="294.5" y="21.5" width="8" height="5" rx="1" fill="#FAFAFA"/>
+    <path d="M315 21 v6" stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round"/>
+    <rect x="265" y="25" width="3" height="4" rx="0.5" fill="#FAFAFA"/>
+    <rect x="270" y="23" width="3" height="6" rx="0.5" fill="#FAFAFA"/>
+    <rect x="275" y="21" width="3" height="8" rx="0.5" fill="#FAFAFA"/>
+    <path d="M258 27 a7 7 0 0 1 9 0" fill="none" stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Botón regresar -->
+  <circle cx="31" cy="57" r="16" fill="#18181B" stroke="#27272A"/>
+  <path d="M26 57 L36 49 M26 57 L36 65" fill="none" stroke="#FAFAFA" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Foto de perfil -->
+  <circle cx="187.5" cy="192" r="62" fill="url(#avatar)"/>
+  <text x="187.5" y="207" text-anchor="middle" font-size="44" font-weight="800" fill="#fff" font-family="sans-serif">Z</text>
+
+  <!-- Nombre -->
+  <text x="187.5" y="286" text-anchor="middle" font-size="24" font-weight="700" fill="#FAFAFA" font-family="sans-serif">Zendaya</text>
+  <text x="187.5" y="310" text-anchor="middle" font-size="12" fill="#71717A" font-family="sans-serif">1 septiembre 1996 · Oakland, California, EE. UU.</text>
+
+  <!-- Seguimiento social -->
+  <g>
+    <rect x="27" y="330" width="96" height="36" rx="18" fill="#18181B" stroke="#27272A"/>
+    <text x="75" y="353" text-anchor="middle" font-size="13" font-weight="600" fill="#FAFAFA" font-family="sans-serif">21.3M</text>
+    <rect x="133" y="330" width="86" height="36" rx="18" fill="#18181B" stroke="#27272A"/>
+    <text x="176" y="353" text-anchor="middle" font-size="13" font-weight="600" fill="#FAFAFA" font-family="sans-serif">74 obras</text>
+    <rect x="229" y="330" width="119" height="36" rx="18" fill="#18181B" stroke="#27272A"/>
+    <text x="288" y="353" text-anchor="middle" font-size="13" font-weight="600" fill="#FAFAFA" font-family="sans-serif">Instagram</text>
+  </g>
+
+  <!-- Biografía -->
+  <g>
+    <text x="27" y="404" font-size="17" font-weight="700" fill="#FAFAFA" font-family="sans-serif">Biografía</text>
+    <text x="27" y="428" font-size="13" fill="#A1A1AA" font-family="sans-serif">Actriz, modelo y cantante estadounidense. Conocida por</text>
+    <text x="27" y="447" font-size="13" fill="#A1A1AA" font-family="sans-serif">su papel de Rue en Euphoria, MJ en Spider-Man y Chani</text>
+    <text x="27" y="466" font-size="13" fill="#A1A1AA" font-family="sans-serif">en Dune. Ganó dos premios Emmy y un Globo de Oro.</text>
+    <text x="27" y="485" font-size="13" fill="#A1A1AA" font-family="sans-serif">Comenzó su carrera como modelo infantil y bailarina.</text>
+    <text x="27" y="504" font-size="13" fill="#3F3F46" font-family="sans-serif">Ver más...</text>
+  </g>
+
+  <!-- Filmografía -->
+  <g>
+    <text x="27" y="540" font-size="17" font-weight="700" fill="#FAFAFA" font-family="sans-serif">Filmografía destacada</text>
+    <rect x="17" y="556" width="100" height="150" rx="12" fill="url(#g1)"/>
+    <text x="67" y="630" text-anchor="middle" font-size="9" fill="#fff" opacity="0.6" font-family="sans-serif">SPIDER-MAN</text>
+    <text x="17" y="722" font-size="10" fill="#A1A1AA" font-family="sans-serif">Spider-Man: No Way Home</text>
+    <rect x="125" y="556" width="100" height="150" rx="12" fill="url(#g2)"/>
+    <text x="175" y="630" text-anchor="middle" font-size="9" fill="#fff" opacity="0.6" font-family="sans-serif">EUPHORIA</text>
+    <text x="125" y="722" font-size="10" fill="#A1A1AA" font-family="sans-serif">Euphoria (Serie)</text>
+    <rect x="233" y="556" width="100" height="150" rx="12" fill="url(#g3)"/>
+    <text x="283" y="630" text-anchor="middle" font-size="9" fill="#fff" opacity="0.6" font-family="sans-serif">DUNE</text>
+    <text x="233" y="722" font-size="10" fill="#A1A1AA" font-family="sans-serif">Dune: Parte Dos</text>
+    <rect x="341" y="556" width="100" height="150" rx="12" fill="url(#g4)"/>
+    <rect x="341" y="556" width="27" height="150" rx="12" fill="#09090B"/>
+    <text x="341" y="730" font-size="10" fill="#3F3F46" font-family="sans-serif">Challeng…</text>
+  </g>
+</svg>

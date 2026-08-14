@@ -1,11 +1,7 @@
-import { Text, View } from "react-native";
+import { Redirect } from "expo-router";
 
-const SelNicTV = () => {
-  return (
-    <View>
-      <Text>SelNicTV</Text>
-    </View>
-  );
+const MoviesApp = () => {
+  return <Redirect href="/home" />;
 };
 
-export default SelNicTV;
+export default MoviesApp;

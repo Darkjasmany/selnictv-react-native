@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CineApp — Mockups de pantallas</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0f0f12;
+      color: #fafafa;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      padding: 32px 24px 64px;
+    }
+    header {
+      max-width: 1200px;
+      margin: 0 auto 28px;
+    }
+    header h1 { font-size: 28px; font-weight: 700; }
+    header p { color: #a1a1aa; margin-top: 6px; font-size: 14px; line-height: 1.5; }
+    header code {
+      background: #18181b;
+      border: 1px solid #27272a;
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-size: 13px;
+      color: #a78bfa;
+    }
+    .grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 28px;
+    }
+    .card {
+      background: #141417;
+      border: 1px solid #26262b;
+      border-radius: 16px;
+      padding: 16px;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+    .card:hover { transform: translateY(-4px); border-color: #8b5cf6; }
+    .card h2 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .card .tag {
+      font-size: 11px;
+      font-weight: 600;
+      color: #8b5cf6;
+      background: #8b5cf61a;
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+    .card .desc { font-size: 12px; color: #71717a; margin-bottom: 12px; }
+    .card svg {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+    }
+    footer {
+      max-width: 1200px;
+      margin: 40px auto 0;
+      color: #52525b;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+    footer strong { color: #a1a1aa; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CineApp — Mockups de pantallas</h1>
+    <p>
+      Maquetas SVG de las 8 pantallas principales. Cada archivo en la carpeta
+      <code>mockups/</code> se puede importar directamente en Figma
+      (arrastra el <code>.svg</code> al lienzo). Los textos son editables en Figma.
+    </p>
+  </header>
+
+  <div class="grid">
+    <div class="card">
+      <h2>1. Home <span class="tag">Tab</span></h2>
+      <p class="desc">Hero carousel + secciones horizontales con "Ver más" + tab bar</p>
+      <img src="01-home.svg" alt="Home" />
+    </div>
+    <div class="card">
+      <h2>2. Detalle de película <span class="tag">Stack</span></h2>
+      <p class="desc">Trailer, guardar, dónde verlo, sinopsis, reparto</p>
+      <img src="02-detalle-pelicula.svg" alt="Detalle de película" />
+    </div>
+    <div class="card">
+      <h2>3. Detalle de serie <span class="tag">Stack</span></h2>
+      <p class="desc">Mismo layout + selector de temporadas</p>
+      <img src="03-detalle-serie.svg" alt="Detalle de serie" />
+    </div>
+    <div class="card">
+      <h2>4. Buscar <span class="tag">Tab</span></h2>
+      <p class="desc">Input con debounce + chips Películas/Series/Personas + grid</p>
+      <img src="04-buscar.svg" alt="Buscar" />
+    </div>
+    <div class="card">
+      <h2>5. Perfil de actor <span class="tag">Stack</span></h2>
+      <p class="desc">Foto, bio, métricas y filmografía navegable</p>
+      <img src="05-perfil-actor.svg" alt="Perfil de actor" />
+    </div>
+    <div class="card">
+      <h2>6. Mi Lista <span class="tag">Tab</span></h2>
+      <p class="desc">Grid de favoritos persistidos con opción de quitar</p>
+      <img src="06-mi-lista.svg" alt="Mi Lista" />
+    </div>
+    <div class="card">
+      <h2>7. Lista completa ("Ver más") <span class="tag">Stack</span></h2>
+      <p class="desc">Grid de 2 columnas + paginación infinita</p>
+      <img src="07-lista-ver-mas.svg" alt="Lista completa" />
+    </div>
+    <div class="card">
+      <h2>8. Carga (Skeleton) <span class="tag">Estado</span></h2>
+      <p class="desc">Esqueletos animados mientras cargan las queries</p>
+      <img src="08-carga-skeleton.svg" alt="Skeleton de carga" />
+    </div>
+  </div>
+
+  <footer>
+    <strong>Paleta:</strong> fondo <code>#09090B</code> · superficie <code>#18181B</code> ·
+    acento <code>#8B5CF6</code> · texto <code>#FAFAFA</code> ·
+    texto atenuado <code>#A1A1AA</code>.<br />
+    <strong>Importar a Figma:</strong> abre Figma → nueva página → arrastra los archivos
+    <code>.svg</code> al lienzo (o File → Import). Cada SVG entra como un frame editable.
+  </footer>
+</body>
+</html>
