@@ -7,12 +7,11 @@ import { CastMapper } from "@/infrastructure/mappers/cast.mapper";
 export const getMovieCastActions = async (id: number): Promise<Cast[]> => {
   try {
     const { data } = await movieApi.get<MovieDBCreditResponse>(
-      `/${id}/credits`,
+      `/movie/${id}/credits`,
     );
 
     // como se definio en la respuesta de la API por cada cast se crea un array de actores por lo que yo accedo a la respuesta y mapeo a cada actor para tener con el formato indicado
     return data.cast.map(CastMapper.fromtheCastMovieDBToMovie);
-    console.log(data);
   } catch (error) {
     console.error(error);
     throw new Error("Failed to cast movie");

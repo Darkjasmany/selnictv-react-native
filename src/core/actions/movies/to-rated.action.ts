@@ -15,11 +15,14 @@ export const topRatedMoviesActions = async ({
 }: Options) => {
   try {
     // 2. Podemos enviarlo en la ruta o enviar el segundo argumento de una petición axios
-    const { data } = await movieApi.get<MovieDBMoviesResponse>("/top_rated", {
-      params: {
-        pages: page,
+    const { data } = await movieApi.get<MovieDBMoviesResponse>(
+      "/movie/top_rated",
+      {
+        params: {
+          pages: page,
+        },
       },
-    });
+    );
     const movies = data.results.map((movie) =>
       MovieMapper.fromtheMovieDBToMovie(movie),
     );

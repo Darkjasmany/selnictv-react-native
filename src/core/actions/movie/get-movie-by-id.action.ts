@@ -7,7 +7,7 @@ export const getMovieByIdActions = async (
   id: number | string,
 ): Promise<CompleteMovie> => {
   try {
-    const { data } = await movieApi.get<MovieDBMovieReponse>(`/${id}`);
+    const { data } = await movieApi.get<MovieDBMovieReponse>(`/movie/${id}`);
     return MovieMapper.fromTheMovieDBToCompleteMovie(data);
   } catch (error) {
     console.error(error);

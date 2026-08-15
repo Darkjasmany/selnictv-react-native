@@ -6,7 +6,6 @@
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Stack } from "expo-router";
-import React from "react";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import "../../global.css";
 
@@ -16,7 +15,14 @@ export default function RootLayout() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <QueryClientProvider client={queryClient}>
-        <Stack screenOptions={{ headerShown: false }} />
+        <Stack screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="(tabs)" />
+          <Stack.Screen name="movie/[id]" />
+          <Stack.Screen name="tv/[id]" />
+          <Stack.Screen name="person/[id]" />
+          <Stack.Screen name="collection/[id]" />
+          <Stack.Screen name="tv/[category]" />
+        </Stack>
       </QueryClientProvider>
     </GestureHandlerRootView>
   );
