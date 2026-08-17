@@ -4,6 +4,11 @@
 
 // Se renderiza el componente Stack que nos permite manejar la navegación entre las diferentes pantallas de nuestra aplicación.
 
+// TODO <Tab.Screen> es un componente de React Navigation utilizado para definir cada pestaña individual dentro de un navegador de pestañas (como createBottomTabNavigator).  Sus propiedades esenciales son:
+// name: Define la ruta o identificador único de la pestaña para la navegación.
+// component: Especifica el componente de React que se renderizará cuando esa pestaña esté activa.
+// <Tab> (o la constante Tab creada con createBottomTabNavigator) actúa como el contenedor principal o "wrapper" que gestiona el estado y la lógica de las pestañas. Dentro de esta etiqueta se anidan las etiquetas <Tab.Screen> para estructurar la barra de navegación inferior, permitiendo además configurar opciones globales mediante screenOptions.
+
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Stack } from "expo-router";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
