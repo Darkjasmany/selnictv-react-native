@@ -3,6 +3,7 @@ import ErrorState from "@/presentation/components/ui/ErrorState";
 import HomeSkeleton from "@/presentation/components/ui/HomeSkeleton";
 import PosterHorizontalList from "@/presentation/components/ui/PosterHorizontalList";
 import { useMovies } from "@/presentation/hooks/useMovies";
+import { useTv } from "@/presentation/hooks/useTv";
 import { RefreshControl, ScrollView, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
@@ -10,6 +11,8 @@ const HomeScreen = () => {
   const safeArea = useSafeAreaInsets(); // Obtenemos los valores de safe area para ajustar el contenido de la pantalla
   const { nowPlayingQuery, popularQuery, topRatedQuery, upcomingQuery } =
     useMovies();
+
+  const { onTheAirQuery } = useTv();
 
   // Aqui se puede manejar el estado de carga, error y exito de la consulta de películas
   // Por ejemplo, si la consulta está cargando, se puede mostrar un indicador de carga
@@ -52,6 +55,17 @@ const HomeScreen = () => {
           title="En Cartelera"
           items={nowPlayingQuery.data ?? []}
           href="/movies/now_playing"
+          className="mb-5"
+        />
+        {/* Sección de Series */}
+        <PosterHorizontalList
+          title="Series en Emisión"
+          items={(onTheAirQuery.data ?? []).map((s) => ({
+            id: s.id,
+            poster: s.poster,
+            mediaType: "tv" as const,
+          }))}
+          href="/tv/on_the_air"
           className="mb-5"
         />
 

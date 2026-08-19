@@ -1,7 +1,6 @@
-import { View, Text } from "react-native";
-import React from "react";
-import { CompleteMovie } from "@/infrastructure/interfaces/movie.interface";
 import { currencyFormatter } from "@/config/helpers/formatter";
+import { CompleteMovie } from "@/infrastructure/interfaces/movie.interface";
+import { Text, View } from "react-native";
 
 interface Props {
   movie: CompleteMovie;
